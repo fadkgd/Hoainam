@@ -294,8 +294,8 @@ BtnStroke.Name = "BtnStroke"
     TextLabel.Position = UDim2.new(0.199847102, 0, 0.25, 0)
     TextLabel.Size = UDim2.new(0, 200, 0, 50)
     TextLabel.Font = Enum.Font.FredokaOne
-    TextLabel.Text = "Maris Hub"
-    TextLabel.TextColor3 = Color3.fromRGB(216, 216, 255)
+    TextLabel.Text = "Maris Hub ( BloxFruit )"
+    TextLabel.TextColor3 = Color3.fromRGB(77, 137, 255)
     TextLabel.TextSize = 18.000
     TextLabel.TextWrapped = true
  else
@@ -316,7 +316,7 @@ BtnStroke.Name = "BtnStroke"
     TextLabel.Size = UDim2.new(0, 200, 0, 50)
     TextLabel.Font = Enum.Font.FredokaOne
     TextLabel.Text = "Thai Version"
-    TextLabel.TextColor3 = Color3.fromRGB(216, 216, 255)
+    TextLabel.TextColor3 = Color3.fromRGB(77, 137, 255)
     TextLabel.TextSize = 18.000
     TextLabel.TextWrapped = true
  end
