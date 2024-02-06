@@ -12432,7 +12432,7 @@ end
 end)
 end
 if _G.Mode == "English" then
-page9:Toggle("LockMoon", _G.LockMoon , function(value)
+page9:Toggle("Lock Moon", _G.LockMoon , function(value)
 _G.LockMoon = value
 LockMoon()
 end)
