@@ -12323,7 +12323,7 @@ local function round(n)
     end
     end)
 if _G.Mode == "English" then
-page9:Toggle("ESPMirageIsland", _G.ESPMirageIsland, function(value)
+page9:Toggle("Esp Mirage Island", _G.ESPMirageIsland, function(value)
     _G.ESPMirageIsland = value
     ESPMirageIsland()
 end)
