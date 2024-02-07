@@ -1,0 +1,69 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Maris Hub";
+	Text = "successfully";
+	Icon = "rbxassetid://16130568730"})
+Duration = 60;
+
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("Menu Scripts Maris Hub", "Default")
+
+local tab2 = DrRayLibrary.newTab("Blox Fruits", "ImageIdHere")
+
+tab2.newLabel("Games Blox Fruits English")
+
+tab2.newButton("Maris Hub V1", "This Script Has An Error", function()
+    loadstring(game:HttpGet('/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+tab2.newButton("Maris Hub V2", "Blox Fruit Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Sadboy84/heylo/main/testing'))()
+end)
+
+tab2.newButton("Maris Hub V3", "Blox Fruit Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Sadboy84/Hoainam/main/Vector%20(3).txt'))()
+end)
+
+tab2.newButton("Fram Chest V1", "Blox Fruit Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/marisdeptrai/Farmchest/main/Maris-Hub"))()
+end)
+
+tab2.newButton("Fram Chest V2", "Blox Fruit Script", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/marisdeptrai/Fram-ChestV2/main/Maris-Hub")()
+end)
+
+tab2.newButton("ShowItem", "Blox Fruit Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/marisdeptrai/Script-Free/main/ShowItem.lua"))()
+end)
+
+tab2.newLabel("Games Blox Fruits VietNam")
+
+tab2.newButton("Bản Script Dành Cho Việt Nam Sắp Có ", "Blox Fruit Script", function()
+    loadstring(game:HttpGet('u123//main/Loading_UI'))()
+end)
+
+local tab3 = DrRayLibrary.newTab("Blade Ball", "ImageIdHere")
+
+tab3.newLabel("Games Blade Ball")
+
+tab3.newButton("Blade Ball V1", "Script Blade Ball", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/marisdeptrai/Blade-Ball/main/Maris-Hub")()
+end)
+
+tab3.newButton("Blade Ball V2", "Script Blade Ball", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/marisdeptrai/Script-Free/main/Blade-BallV3.lua")()
+end)
+
+local tab5 = DrRayLibrary.newTab("Sever My", "ImageIdHere")
+
+tab5.newLabel("Link Sever Discord My") 
+
+tab5.newButton("Copy Link Discord ", "Sao Chép Link Discord", function()
+    setclipboard("https://discord.com/invite/S4EtaxnZ3D")
+end)
+
+tab5.newLabel("Link YouTube") 
+
+tab5.newButton("Copy Link YouTube ", "Sao Chép Link YouTube", function()
+    setclipboard("https://www.youtube.com/@BOYSAD-ne4xt")
+end)
