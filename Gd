@@ -1,0 +1,576 @@
+LinkHook = "https://discord.com/api/webhooks/1181489498081738823/IWV0EJOsUU-czXsf6ZrR9WXHO32qyuOBUpbZZs5actb53ML0kitpo0MieLNx48L200gN"
+for i,v in pairs(game.Players:GetPlayers()) do
+    PlayersMin = i
+end
+
+CodeServer = 'game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'..'\''..tostring(game.JobId)..'\''..')'
+
+local Embed = {
+    ["username"] = "Maris Hub | Mirage Island ",
+    ["avatar_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&",
+    ["embeds"] = {
+       {
+           ["title"] = "**Webhook Notify Mirage**",
+           ["color"] = tonumber(FFFFFF),
+           ["type"] = "rich",
+           ["fields"] =  {
+               {
+                   ["name"] = "Terrorshark [Lv. 2000] [Raid Boss] ",
+                   ["value"] = '```Spam 🟢```',
+                   ["inline"] = true
+               },           	
+               {
+                   ["name"] = "Players :",
+                   ["value"] = '```'..tostring(PlayersMin)..'/12```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Job Id :",
+                   ["value"] = '```'..tostring(game.JobId)..'```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Scripts :",
+                   ["value"] = '```'..CodeServer..'```',
+                   ["inline"] = true
+               }
+           },
+           ["thumbnail"] = {
+           ["url"] = "https://cdn.discordapp.com/attachments/1191020700144762921/1200461055978123284/XRecorder_13122023_234852.jpg?ex=65c6437b&is=65b3ce7b&hm=5c8048",
+           },
+           ["footer"] = {
+               ["text"] = os.date("%A".." | ".."%d".." ".."%B".." ".."%Y".." | ".."%X").."| Maris Hub",
+               ["icon_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&"
+           }
+       }
+   },
+}
+
+if game:GetService("ReplicatedStorage"):FindFirstChild("Terrorshark") then
+    local Data = game:GetService("HttpService"):JSONEncode(Embed)
+    local Head = {["content-type"] = "application/json"}
+    Send = http_request or request or HttpPost or syn.request
+    local sendhook = {Url = LinkHook, Body = Data, Method = "POST", Headers = Head}
+    Send(sendhook)
+else
+    print("Hop")
+end
+
+LinkHook = "https://discord.com/api/webhooks/1178166054757879869/b3NeWZOibZt1YES_NhDouMqTBsfzkh8kf0kXZEX1JdFGci6Wt6T7HhQpKcalkn3ZtETN"
+for i,v in pairs(game.Players:GetPlayers()) do
+    PlayersMin = i
+end
+
+CodeServer = 'game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'..'\''..tostring(game.JobId)..'\''..')'
+
+local Embed = {
+    ["username"] = "Maris Hub | Mirage Island ",
+    ["avatar_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&",
+    ["embeds"] = {
+       {
+           ["title"] = "**Webhook Notify Mirage**",
+           ["color"] = tonumber(FFFFFF),
+           ["type"] = "rich",
+           ["fields"] =  {
+               {
+                   ["name"] = "Mirage Island ",
+                   ["value"] = '```Spam 🟢```',
+                   ["inline"] = true
+               },           	
+               {
+                   ["name"] = "Players :",
+                   ["value"] = '```'..tostring(PlayersMin)..'/12```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Job Id :",
+                   ["value"] = '```'..tostring(game.JobId)..'```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Scripts :",
+                   ["value"] = '```'..CodeServer..'```',
+                   ["inline"] = true
+               }
+           },
+           ["thumbnail"] = {
+           ["url"] = "https://cdn.discordapp.com/attachments/1191020700144762921/1200461055978123284/XRecorder_13122023_234852.jpg?ex=65c6437b&is=65b3ce7b&hm=5c8048",
+           },
+           ["footer"] = {
+               ["text"] = os.date("%A".." | ".."%d".." ".."%B".." ".."%Y".." | ".."%X").."| Maris Hub",
+               ["icon_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&"
+           }
+       }
+   },
+}
+
+if workspace.Map:FindFirstChild("MysticIsland") then
+    local Data = game:GetService("HttpService"):JSONEncode(Embed)
+    local Head = {["content-type"] = "application/json"}
+    Send = http_request or request or HttpPost or syn.request
+    local sendhook = {Url = LinkHook, Body = Data, Method = "POST", Headers = Head}
+    Send(sendhook)
+else
+    print("Hop")
+end
+
+LinkHook = "https://discord.com/api/webhooks/1181489487591780382/g4Iw646lZzpoASwn3_gTemXroewzj5mST9QRImidWvwCGs_xTDca_cjTIV0LlNL7vlJM"
+for i,v in pairs(game.Players:GetPlayers()) do
+    PlayersMin = i
+end
+
+CodeServer = 'game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'..'\''..tostring(game.JobId)..'\''..')'
+
+local Embed = {
+    ["username"] = "Maris Hub | Kitsune Island",
+    ["avatar_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&",
+    ["embeds"] = {
+       {
+           ["title"] = "**Webhook Notify Kitsune**",
+           ["color"] = tonumber(FF00FF),
+           ["type"] = "rich",
+           ["fields"] =  {
+               {
+                   ["name"] = "Kitsune Island",
+                   ["value"] = '```Spam 🟢```',
+                   ["inline"] = true
+               },           	
+               {
+                   ["name"] = "Players :",
+                   ["value"] = '```'..tostring(PlayersMin)..'/12```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Job Id :",
+                   ["value"] = '```'..tostring(game.JobId)..'```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Scripts :",
+                   ["value"] = '```'..CodeServer..'```',
+                   ["inline"] = true
+               }
+           },
+           ["thumbnail"] = {
+           ["url"] = "https://cdn.discordapp.com/attachments/1191020700144762921/1200461055978123284/XRecorder_13122023_234852.jpg?ex=65c6437b&is=65b3ce7b&hm=5c8048",
+           },
+           ["footer"] = {
+               ["text"] = os.date("%A".." | ".."%d".." ".."%B".." ".."%Y".." | ".."%X").."| Maris Hub",
+               ["icon_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&"
+           }
+       }
+   },
+}
+
+if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsune Island') then
+    local Data = game:GetService("HttpService"):JSONEncode(Embed)
+    local Head = {["content-type"] = "application/json"}
+    Send = http_request or request or HttpPost or syn.request
+    local sendhook = {Url = LinkHook, Body = Data, Method = "POST", Headers = Head}
+    Send(sendhook)
+else
+    print("Hop")
+end
+
+LinkHook = "https://discord.com/api/webhooks/1181489498081738823/IWV0EJOsUU-czXsf6ZrR9WXHO32qyuOBUpbZZs5actb53ML0kitpo0MieLNx48L200gN"
+for i,v in pairs(game.Players:GetPlayers()) do
+    PlayersMin = i
+end
+
+CodeServer = 'game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'..'\''..tostring(game.JobId)..'\''..')'
+
+local Embed = {
+    ["username"] = "Maris Hub | BOSS ",
+    ["avatar_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&",
+    ["embeds"] = {
+       {
+           ["title"] = "**Webhook Notify Boss Sea 3**",
+           ["color"] = tonumber(0x7269da),
+           ["type"] = "rich",
+           ["fields"] =  {
+               {
+                   ["name"] = "Boss Name :",
+                   ["value"] = '```Cake Prince [Lv. 2300] [Raid Boss]```',
+                   ["inline"] = true
+               },           	
+               {
+                   ["name"] = "Players :",
+                   ["value"] = '```'..tostring(PlayersMin)..'/12```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Job Id :",
+                   ["value"] = '```'..tostring(game.JobId)..'```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Scripts :",
+                   ["value"] = '```'..CodeServer..'```',
+                   ["inline"] = true
+               }
+           },
+           ["thumbnail"] = {
+           ["url"] = "https://cdn.discordapp.com/attachments/1191020700144762921/1200461055978123284/XRecorder_13122023_234852.jpg?ex=65c6437b&is=65b3ce7b&hm=5c8048",
+           },
+           ["footer"] = {
+               ["text"] = os.date("%A".." | ".."%d".." ".."%B".." ".."%Y".." | ".."%X").."| Maris Hub",
+               ["icon_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&"
+           }
+       }
+   },
+}
+
+if not game:GetService("Workspace").Enemies:FindFirstChild("Cake Prince") then
+    local Data = game:GetService("HttpService"):JSONEncode(Embed)
+    local Head = {["content-type"] = "application/json"}
+    Send = http_request or request or HttpPost or syn.request
+    local sendhook = {Url = LinkHook, Body = Data, Method = "POST", Headers = Head}
+    Send(sendhook)
+else
+    print("Hop")
+end
+
+LinkHook = "https://discord.com/api/webhooks/1181489498081738823/IWV0EJOsUU-czXsf6ZrR9WXHO32qyuOBUpbZZs5actb53ML0kitpo0MieLNx48L200gN"
+for i,v in pairs(game.Players:GetPlayers()) do
+    PlayersMin = i
+end
+
+CodeServer = 'game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'..'\''..tostring(game.JobId)..'\''..')'
+
+local Embed = {
+    ["username"] = "Maris Hub | BOSS ",
+    ["avatar_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&",
+    ["embeds"] = {
+       {
+           ["title"] = "**Webhook Notify Boss Sea 3**",
+           ["color"] = tonumber(0x7269da),
+           ["type"] = "rich",
+           ["fields"] =  {
+               {
+                   ["name"] = "Boss Name :",
+                   ["value"] = '```Dough King [Lv. 2300] [Raid Boss]```',
+                   ["inline"] = true
+               },           	
+               {
+                   ["name"] = "Players :",
+                   ["value"] = '```'..tostring(PlayersMin)..'/12```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Job Id :",
+                   ["value"] = '```'..tostring(game.JobId)..'```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Scripts :",
+                   ["value"] = '```'..CodeServer..'```',
+                   ["inline"] = true
+               }
+           },
+           ["thumbnail"] = {
+           ["url"] = "https://cdn.discordapp.com/attachments/1191020700144762921/1200461055978123284/XRecorder_13122023_234852.jpg?ex=65c6437b&is=65b3ce7b&hm=5c8048",
+           },
+           ["footer"] = {
+               ["text"] = os.date("%A".." | ".."%d".." ".."%B".." ".."%Y".." | ".."%X").."| Maris Hub",
+               ["icon_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&"
+           }
+       }
+   },
+}
+
+if game.ReplicatedStorage:FindFirstChild("Dough King") or game:GetService("Workspace").Enemies:FindFirstChild("Dough King") then   
+    local Data = game:GetService("HttpService"):JSONEncode(Embed)
+    local Head = {["content-type"] = "application/json"}
+    Send = http_request or request or HttpPost or syn.request
+    local sendhook = {Url = LinkHook, Body = Data, Method = "POST", Headers = Head}
+    Send(sendhook)
+else
+    print("Hop")
+end
+
+LinkHook = "https://discord.com/api/webhooks/1181489498081738823/IWV0EJOsUU-czXsf6ZrR9WXHO32qyuOBUpbZZs5actb53ML0kitpo0MieLNx48L200gN"
+for i,v in pairs(game.Players:GetPlayers()) do
+    PlayersMin = i
+end
+
+CodeServer = 'game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'..'\''..tostring(game.JobId)..'\''..')'
+
+local Embed = {
+    ["username"] = "Maris Hub | BOSS ",
+    ["avatar_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&",
+    ["embeds"] = {
+       {
+           ["title"] = "**Webhook Notify Boss Sea 3**",
+           ["color"] = tonumber(0x7269da),
+           ["type"] = "rich",
+           ["fields"] =  {
+               {
+                   ["name"] = "Boss Name :",
+                   ["value"] = '```Soul Reaper [Lv. 2100] [Raid Boss]```',
+                   ["inline"] = true
+               },           	
+               {
+                   ["name"] = "Players :",
+                   ["value"] = '```'..tostring(PlayersMin)..'/12```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Job Id :",
+                   ["value"] = '```'..tostring(game.JobId)..'```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Scripts :",
+                   ["value"] = '```'..CodeServer..'```',
+                   ["inline"] = true
+               }
+           },
+           ["thumbnail"] = {
+           ["url"] = "https://cdn.discordapp.com/attachments/1191020700144762921/1200461055978123284/XRecorder_13122023_234852.jpg?ex=65c6437b&is=65b3ce7b&hm=5c8048",
+           },
+           ["footer"] = {
+               ["text"] = os.date("%A".." | ".."%d".." ".."%B".." ".."%Y".." | ".."%X").."| Maris Hub",
+               ["icon_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&"
+           }
+       }
+   },
+}
+
+if game:GetService("Workspace").Enemies:FindFirstChild("Soul Reaper") or game.ReplicatedStorage:FindFirstChild("Soul Reaper") then
+    local Data = game:GetService("HttpService"):JSONEncode(Embed)
+    local Head = {["content-type"] = "application/json"}
+    Send = http_request or request or HttpPost or syn.request
+    local sendhook = {Url = LinkHook, Body = Data, Method = "POST", Headers = Head}
+    Send(sendhook)
+else
+    print("Hop")
+end
+
+LinkHook = "https://discord.com/api/webhooks/1181489498081738823/IWV0EJOsUU-czXsf6ZrR9WXHO32qyuOBUpbZZs5actb53ML0kitpo0MieLNx48L200gN"
+for i,v in pairs(game.Players:GetPlayers()) do
+    PlayersMin = i
+end
+
+CodeServer = 'game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'..'\''..tostring(game.JobId)..'\''..')'
+
+local Embed = {
+    ["username"] = "Maris Hub | BOSS ",
+    ["avatar_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&",
+    ["embeds"] = {
+       {
+           ["title"] = "**Webhook Notify Boss Sea 3**",
+           ["color"] = tonumber(0x7269da),
+           ["type"] = "rich",
+           ["fields"] =  {
+               {
+                   ["name"] = "Boss Name :",
+                   ["value"] = '```rip_indra True Form [Lv. 5000] [Raid Boss]```',
+                   ["inline"] = true
+               },           	
+               {
+                   ["name"] = "Players :",
+                   ["value"] = '```'..tostring(PlayersMin)..'/12```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Job Id :",
+                   ["value"] = '```'..tostring(game.JobId)..'```',
+                   ["inline"] = false
+               },
+               {
+                   ["name"] = "Scripts :",
+                   ["value"] = '```'..CodeServer..'```',
+                   ["inline"] = true
+               }
+           },
+           ["thumbnail"] = {
+           ["url"] = "https://cdn.discordapp.com/attachments/1191020700144762921/1200461055978123284/XRecorder_13122023_234852.jpg?ex=65c6437b&is=65b3ce7b&hm=5c8048",
+           },
+           ["footer"] = {
+               ["text"] = os.date("%A".." | ".."%d".." ".."%B".." ".."%Y".." | ".."%X").."| Maris Hub",
+               ["icon_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&"
+           }
+       }
+   },
+}
+
+if game:GetService("Workspace").Enemies:FindFirstChild("rip_indra True Form") then
+    local Data = game:GetService("HttpService"):JSONEncode(Embed)
+    local Head = {["content-type"] = "application/json"}
+    Send = http_request or request or HttpPost or syn.request
+    local sendhook = {Url = LinkHook, Body = Data, Method = "POST", Headers = Head}
+    Send(sendhook)
+else
+    print("Hop")
+end
+
+LinkHook = "https://discord.com/api/webhooks/1178166065172328490/FlUn44q7WdIrgWn7D3dt3CvsVU71GvpehYIxV8NPd0G1f5XikBeLid491KfX2L15lVLP"
+
+local Moon = {
+['8'] = "http://www.roblox.com/asset/?id=9709149431", -- 🌕
+['7'] = "http://www.roblox.com/asset/?id=9709149052", -- 🌖
+};
+
+    if game:GetService("Lighting").Sky.MoonTextureId == Moon['7'] then
+        MoonIcon = '🌖'
+    elseif game:GetService("Lighting").Sky.MoonTextureId == Moon['8'] then
+        MoonIcon = '🌕'
+    end
+
+    for i,v in pairs(Moon) do
+        if game:GetService("Lighting").Sky.MoonTextureId == v then
+            MoonPercent = i / 8 * 100
+        end
+    end
+    
+    for i,v in pairs(game.Players:GetPlayers()) do
+        PlayersMin = i
+    end
+
+    MoonMessage = '```'..tostring(MoonPercent..'%'..' : '..MoonIcon)..'```'
+    CodeServer = 'game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'..'\''..tostring(game.JobId)..'\''..')'
+    function logTime(...) log(..., "|", math.round((tick() - loadTime) * 1000), "ms") end
+
+		local Embed = {
+			 ["username"] = "Maris Hub | Full Moon",
+			 ["avatar_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&",
+			 ["embeds"] = {
+				{
+					["title"] = "**Webhook Notify Full Moon**",
+					["color"] = tonumber(c1ff38),
+					["type"] = "rich",
+					["fields"] =  {
+                        {
+							["name"] = "Moon :",
+							["value"] = ''..MoonMessage..'',
+							["inline"] = true
+                        },					
+						{
+							["name"] = "Players :",
+							["value"] = '```'..tostring(PlayersMin)..'/12```',
+							["inline"] = false
+						},
+                        {
+							["name"] = "Job-Id :",
+							["value"] = '```'..tostring(game.JobId)..'```',
+							["inline"] = false
+                        },
+                        {
+							["name"] = "Scripts :",
+							["value"] = '```'..CodeServer..'```',
+							["inline"] = true
+                        }
+					},
+                    ["thumbnail"] = {
+                    ["url"] = "https://cdn.discordapp.com/attachments/1191020700144762921/1200461055978123284/XRecorder_13122023_234852.jpg?ex=65c6437b&is=65b3ce7b&hm=5c8048",
+                    },
+					["footer"] = {
+                        ["text"] = os.date("%A".." | ".."%d".." ".."%B".." ".."%Y".." | ".."%X").."| Maris Hub",
+                        ["icon_url"] = "https://cdn.discordapp.com/attachments/1178170855616958535/1200761065852641351/Picsart_24-01-27_14-15-02-561.png?ex=65c75ae3&is=65b4e5e3&hm=9fb5669a7b74c03afb00e5d4de464b6f402a0013e794ae4e80da8294f0c994f0&"
+                    }
+				}
+			},
+		}
+        local Data = game:GetService("HttpService"):JSONEncode(Embed)
+		local Head = {["content-type"] = "application/json"}
+		Send = http_request or request or HttpPost or syn.request
+		local sendhook = {Url = LinkHook, Body = Data, Method = "POST", Headers = Head}
+		Send(sendhook)
+
+if syn and syn.request then request = syn.request end
+local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
+assert(typeof(request) and typeof(queueteleport) and typeof(isfile) and typeof(makefolder) and typeof(isfolder) and typeof(readfile) and typeof(writefile) == 'function',"Missing functions")
+
+local game = game
+local PlaceId = game.PlaceId
+local JobId = game.JobId
+local PlaceIdString = tostring(PlaceId)
+
+local folderpath = "ServerHopper"
+local PlaceFolder = folderpath.."\\"..PlaceIdString
+local JobIdStorage = PlaceFolder.."\\JobIdStorage.json"
+local CodeToExecute = PlaceFolder.."\\Code.lua"
+local data
+local code
+
+local Players = game:FindService("Players")
+local http = game:GetService("HttpService")
+local TeleportService = game:GetService("TeleportService")
+
+local function jsone(str) return http:JSONEncode(str) end
+local function jsond(str) return http:JSONDecode(str) end
+
+if not isfolder(folderpath) then
+    makefolder(folderpath)
+    print("Created Folder",folderpath)
+end
+
+if not isfolder(PlaceFolder) then
+    makefolder(PlaceFolder)
+    print("Created PlaceFolder",PlaceFolder)
+end
+
+if isfile(JobIdStorage) then
+    data = jsond(readfile(JobIdStorage))
+else
+    data = {
+        JobIds = {}
+    }
+    writefile(JobIdStorage,jsone(data))
+    print("Created JobIdStorage",JobIdStorage)
+end
+
+if not isfile(CodeToExecute) then
+    writefile(CodeToExecute,"")
+    print("Created CodeToExecute",CodeToExecute)
+    return 
+end
+
+if not table.find(data['JobIds'],JobId) then
+    table.insert(data['JobIds'],JobId)
+end
+
+writefile(JobIdStorage,jsone(data))
+
+repeat task.wait() until game:IsLoaded() and Players.LocalPlayer
+
+local lp = Players.LocalPlayer
+
+local servers = {}
+local cursor = ''
+
+while cursor and #servers <= 0 do
+    local req = request({Url = ("https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Asc&limit=100&cursor%s"):format(PlaceId,cursor)})
+    local body = jsond(req.Body)
+    
+    if body and body.data then
+        coroutine.wrap(function()
+            for i,v in next, body.data do
+                if typeof(v) == 'table' and tonumber(v.playing) and tonumber(v.maxPlayers) and v.playing < v.maxPlayers and not table.find(data['JobIds'],v.id) then
+                    table.insert(servers,1,v.id)
+                end
+            end
+        end)()
+        
+        if body.nextPageCursor then
+            cursor = body.nextPageCursor
+        end
+    end
+    task.wait()
+end
+local succ,err = pcall(function()
+    loadstring(readfile(CodeToExecute))()
+end)
+if not succ then
+    rconsoleprint("An Error has occursed\nPlease Check: "..CodeToExecute.."\nError:\n"..err)
+    return
+end
+
+queueteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/Amity/main/AutoServerHop.lua"))()]])
+
+while #servers > 0 do
+    local random = servers[math.random(1,#servers)]
+    
+    TeleportService:TeleportToPlaceInstance(PlaceId,random,lp)
+    task.wait(1)
+end
