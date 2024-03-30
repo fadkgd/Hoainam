@@ -1551,7 +1551,7 @@ function BypassTele(PosSelect)
         end
     end
 end
-local Window = OrionLib:MakeWindow({Name = "Tên", HidePremium = false, SaveConfig = true, ConfigFolder = "Tên"})
+local Window = OrionLib:MakeWindow({Name = "Tên", HidePremium = false, SaveConfig = true, ConfigFolder = "Memories Hub"})
 local SettingsTab = Window:MakeTab({Name = "About", Icon = "rbxassetid://16161703575", PremiumOnly = false})
 local MainTab = Window:MakeTab({Name = "Main", Icon = "rbxassetid://4483345998", PremiumOnly = false})
 local StackTab = Window:MakeTab({Name = "Stack", Icon = "rbxassetid://4483345998", PremiumOnly = false})
