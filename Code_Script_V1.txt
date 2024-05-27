@@ -2503,7 +2503,7 @@ end)
 ---
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Tên Script", HidePremium = false, IntroText = "Tên Script", SaveConfig = true, ConfigFolder = "Tên Script"})
+local Window = OrionLib:MakeWindow({Name = "Tòn GoodBoy", HidePremium = false, IntroText = "Tòn GoodBoy", SaveConfig = true, ConfigFolder = "Tòn GoodBoy"})
 ----------Tab-----------------------
 local W = Window:MakeTab({
     Name = "Thông Tin",
